@@ -8,10 +8,12 @@ public class Rotation : MonoBehaviour
     float y;
     float z;
 
+    public float speed = 20;
+
     void mirotacion()
     {
         x += 20 * Time.deltaTime;
-        y += 20 * Time.deltaTime;
+        y += speed * Time.deltaTime;
         z += 20 * Time.deltaTime;
 
         gameObject.transform.localRotation = Quaternion.Euler(0, -y, 0);
