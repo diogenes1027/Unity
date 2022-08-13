@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Octahedron : MonoBehaviour
 {
-
+    //Structure that stores a geometry and topology for a figure
     struct Shape
     {
         public Vector3[] geometry;
@@ -12,6 +12,7 @@ public class Octahedron : MonoBehaviour
     };
 
 
+    //Concatenates two arrays of ints
     int[] JoinI(int[] a, int[] b)
     {
 
@@ -22,6 +23,7 @@ public class Octahedron : MonoBehaviour
 
     }
 
+    //Concatenate two arrays of Vector3
     Vector3[] JoinV(Vector3[] a, Vector3[] b)
     {
 
@@ -32,6 +34,7 @@ public class Octahedron : MonoBehaviour
 
     }
 
+    //Creates a Triangle with its 3 vertices and the topology
     Shape factory(Vector3 a, Vector3 b, Vector3 c, int p1, int p2, int p3)
     {
 
@@ -43,6 +46,7 @@ public class Octahedron : MonoBehaviour
         return result;
     }
 
+    //Tessellates a triangle into 4 triangles
     Shape Tessellate(Shape input, int i)
     {
         Vector3[] originalG = input.geometry;
@@ -64,6 +68,8 @@ public class Octahedron : MonoBehaviour
         return result;
     }
 
+
+    //Gets a Shape and distributes its triangles to tesselate each of them
     Shape Octa(Shape input)
     {
         Shape result = new Shape();
@@ -75,7 +81,7 @@ public class Octahedron : MonoBehaviour
 
         for (int i = 0; i < input.topology.Length; i += 3)
         {
-
+            //Creates a triangle with the
             temp = factory(input.geometry[input.topology[i]], input.geometry[input.topology[i + 1]], input.geometry[input.topology[i + 2]], input.topology[i], input.topology[i + 1], input.topology[i + 2]);
 
             temp = Tessellate(temp, i / 3);
@@ -105,6 +111,7 @@ public class Octahedron : MonoBehaviour
         */
 
         Mesh mymesh = new Mesh();
+        
         Vector3[] vertices = new Vector3[]{
             new Vector3(1,0,0),
             new Vector3(0,0,1),
@@ -123,9 +130,13 @@ public class Octahedron : MonoBehaviour
         octahedron.topology = tris;
 
         octahedron = Octa(octahedron);
+        
+
 
         mymesh.vertices = octahedron.geometry;
         mymesh.triangles = octahedron.topology;
+
+
 
         /*
         mymesh.vertices = vertices;
