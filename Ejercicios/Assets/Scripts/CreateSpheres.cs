@@ -7,7 +7,7 @@ public class CreateSpheres : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 100; i++) {
             
             float px = Random.Range(0.0f,10.0f);
             float py = Random.Range(0.0f, 10.0f);
@@ -29,8 +29,8 @@ public class CreateSpheres : MonoBehaviour
     GameObject createSphere(Vector3 position, Color color) {
 
         GameObject mySphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        //mySphere.transform.localPosition = position;
-        mySphere.transform.localPosition = gameObject.transform.position;
+        mySphere.transform.localPosition = position;
+        //mySphere.transform.localPosition = gameObject.transform.position;
 
         Renderer rend = mySphere.GetComponent<Renderer>();
         rend.material = new Material(Shader.Find("Standard"));

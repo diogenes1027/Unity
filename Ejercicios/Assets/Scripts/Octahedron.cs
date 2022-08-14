@@ -130,7 +130,10 @@ public class Octahedron : MonoBehaviour
         octahedron.topology = tris;
 
         octahedron = Octa(octahedron);
+        octahedron = Octa(octahedron);
         
+
+
 
 
         mymesh.vertices = octahedron.geometry;
