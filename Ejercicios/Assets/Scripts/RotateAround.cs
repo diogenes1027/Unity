@@ -15,6 +15,11 @@ public class RotateAround : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.RotateAround(pivot.transform.position, new Vector3(0,1,0), speed * Time.deltaTime);
+        Rotate(speed);
+    }
+
+    void Rotate(float speed) {
+
+        gameObject.transform.RotateAround(pivot.transform.position, new Vector3(0, 1, 0), speed * Time.deltaTime);
     }
 }
