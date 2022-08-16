@@ -24,11 +24,19 @@ public class PlayerController : MonoBehaviour
     {
         if (
             Mathf.Abs(_rigidbody.velocity.y) < 0.01f &&
-            Input.GetButtonDown("Jump")
+            Input.GetKeyDown(KeyCode.Space)
         )
         {
             _animator.SetTrigger("Jump");
             _rigidbody.AddForce(_JUMP_FORCE * Vector3.up, ForceMode.Impulse);
+        }
+
+        if (
+            Mathf.Abs(_rigidbody.velocity.y) < 0.01f &&
+            Input.GetKeyDown(KeyCode.F)
+        )
+        {
+            _animator.SetBool("Gangnam", true);
         }
 
         _horizontalInput = Input.GetAxis("Horizontal");
