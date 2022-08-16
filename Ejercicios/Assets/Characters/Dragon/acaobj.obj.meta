@@ -1,0 +1,402 @@
+fileFormatVersion: 2
+guid: c9f8df30030454b98845827eef180b6a
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Object01Mat
+    second: {fileID: 2100000, guid: 03b49c7223c4f44f28fc62c82f165fda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_clavicleMat
+    second: {fileID: 2100000, guid: 291adce69ef3c4bf697109c8849cc487, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_forearmMat
+    second: {fileID: 2100000, guid: 3b47dbbce32454786b15ea1f06d97f2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_01Mat
+    second: {fileID: 2100000, guid: 11acd62d07f4b4fe1a5e1aba6db59f18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_0Mat
+    second: {fileID: 2100000, guid: b9e11f84f420b49bc90db23e32056a5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_11Mat
+    second: {fileID: 2100000, guid: ef78a9625267f4246bc34c11aae812a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_1Mat
+    second: {fileID: 2100000, guid: 75d8b7396c4a945519b70fedec4eb9c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_21Mat
+    second: {fileID: 2100000, guid: d8262e61de813485ebce6eb06a08bd02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_2Mat
+    second: {fileID: 2100000, guid: 4e266323c527c4cf993d7a94b082b19c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_31Mat
+    second: {fileID: 2100000, guid: dd9056c0da80f400cb096888b6d24cb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_3Mat
+    second: {fileID: 2100000, guid: bec8921a1bdcd4194a4d950b60204b23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_41Mat
+    second: {fileID: 2100000, guid: 8dd4b63bbf58e4ec48c30462ffb83beb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_finger_4Mat
+    second: {fileID: 2100000, guid: d90973e47010e4e59aa88eb246a45bef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_hand_wristMat
+    second: {fileID: 2100000, guid: edde9147760174d06a1182cf14d50d30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_left_upperarmMat
+    second: {fileID: 2100000, guid: e4ed3910a777e4bbba95de84a483bd1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_clavicleMat
+    second: {fileID: 2100000, guid: 43e8c8d6bc78c43f3b9dc2682fdab0c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_forearmMat
+    second: {fileID: 2100000, guid: 69cb926bbd74c435fa36416cec88f150, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_01Mat
+    second: {fileID: 2100000, guid: 39d9f8f9562f24ded95ca40cd265cded, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_0Mat
+    second: {fileID: 2100000, guid: 86c65c624bdce45419fab5cd9c4e1ace, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_11Mat
+    second: {fileID: 2100000, guid: e8d98c0f6634148eb810d02b53be6017, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_1Mat
+    second: {fileID: 2100000, guid: 6da58ffce68b8438096c202982a41101, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_21Mat
+    second: {fileID: 2100000, guid: a385684e733c646e8be873e8e4fc4d5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_2Mat
+    second: {fileID: 2100000, guid: aa16c834dbbee4dd4b06db3ccfd95d69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_31Mat
+    second: {fileID: 2100000, guid: 8941f298e5d7345589b1a518420c2e25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_3Mat
+    second: {fileID: 2100000, guid: 04e9d107e16434e7a9d603c131dcde26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_41Mat
+    second: {fileID: 2100000, guid: 2e070bf807c2a4ceeb548b2a0662b287, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_finger_4Mat
+    second: {fileID: 2100000, guid: 7c24769fdd54b4a59bb3aaae89456fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_hand_wristMat
+    second: {fileID: 2100000, guid: 04856abd2980b4aa0a7cc924d1565782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_right_upperarmMat
+    second: {fileID: 2100000, guid: a1e0b0fd79bc54b9694f4a72cfd0f72d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head_jawMat
+    second: {fileID: 2100000, guid: 891cdce3b36ce4682a510830319d4f26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head_neck_1Mat
+    second: {fileID: 2100000, guid: 19f8c6d535a9a438783f445c48691d32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head_neck_2Mat
+    second: {fileID: 2100000, guid: dec7f9a92cb2d481898e0bc80f411342, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hipsMat
+    second: {fileID: 2100000, guid: 61b79ddf98ae9408ebedc44fcb92f868, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg_left_calfMat
+    second: {fileID: 2100000, guid: dc9e33770ecc3428ea54c1a32f5020d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg_left_footMat
+    second: {fileID: 2100000, guid: 1e29320744343436997db081bb08a452, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg_left_thighMat
+    second: {fileID: 2100000, guid: 4bff4c7bde6de4c37aa5792592f9e909, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg_left_toeMat
+    second: {fileID: 2100000, guid: af79387d4059c4451b076f9bcbd7302d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg_right_calfMat
+    second: {fileID: 2100000, guid: 6b47a22f0e32a401fafc30d6af3f3107, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg_right_footMat
+    second: {fileID: 2100000, guid: c2b56557a7a474f6a8df4afc7c1d10d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg_right_thighMat
+    second: {fileID: 2100000, guid: 382d9b933fcf14eac8221b7f6eccfeed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg_right_toeMat
+    second: {fileID: 2100000, guid: 7a4c2ba9cd8724cadb762035c707b804, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: neckaltMat
+    second: {fileID: 2100000, guid: 744dc7ca241144fdc835aeb325cc8530, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pelvisMat
+    second: {fileID: 2100000, guid: 60e6a16fec0704b09b03414064e2bdd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pelvisaltMat
+    second: {fileID: 2100000, guid: 36d4c0e2ebddd4e28aa60036fa698810, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rootMat
+    second: {fileID: 2100000, guid: 68bac419cc6a44ea6af86006aa73141f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spineMat
+    second: {fileID: 2100000, guid: a8346a21dca974be5821474cbe417c5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spinealtMat
+    second: {fileID: 2100000, guid: f226d6b401e74492aa2e41116800bab7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tail_1Mat
+    second: {fileID: 2100000, guid: 759c7f095ec214df4b64a08cf6abdbe9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tail_2Mat
+    second: {fileID: 2100000, guid: 4eedce860ccf540409673871c0b3e81f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tail_3Mat
+    second: {fileID: 2100000, guid: bc618ff07bcaa45d28f1e124e12e501c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tail_4Mat
+    second: {fileID: 2100000, guid: 6631fe7ffe52f4379a00bc17814afbc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_left_1Mat
+    second: {fileID: 2100000, guid: b27727a5593314befa6f7c9db0e9721b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_left_2Mat
+    second: {fileID: 2100000, guid: d24e58c0c6a094d82a707ba2b48b585b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_left_3Mat
+    second: {fileID: 2100000, guid: 287f2b52d1cfa4f6d99bdf1f8cf7a716, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_left_4Mat
+    second: {fileID: 2100000, guid: 323b444994baa42ccbee46eef72021f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_left_down_feathersMat
+    second: {fileID: 2100000, guid: 929c163eee61c4acb851d7f9c2bcbcae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_right_1Mat
+    second: {fileID: 2100000, guid: 96d04c6daf82c4831924ceca6dd75c6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_right_2Mat
+    second: {fileID: 2100000, guid: 67e1e55d3a13143a7b0f17caaa3b739d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_right_3Mat
+    second: {fileID: 2100000, guid: 3ee64446cf79c48e7a9d535b293290ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_right_4Mat
+    second: {fileID: 2100000, guid: f141a3b2d7af8490ca031f72ada92143, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing_right_down_feathersMat
+    second: {fileID: 2100000, guid: abb21e89356264c339bcbaab6fa23650, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

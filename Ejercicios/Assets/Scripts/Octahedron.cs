@@ -55,9 +55,9 @@ public class Octahedron : MonoBehaviour
         Vector3 A = originalG[0];
         Vector3 B = originalG[1];
         Vector3 C = originalG[2];
-        Vector3 o = (A + B) / 2;
-        Vector3 p = (B + C) / 2;
-        Vector3 q = (A + C) / 2;
+        Vector3 o = ((A + B) / 2);
+        Vector3 p = ((B + C) / 2);
+        Vector3 q = ((A + C) / 2);
         Vector3[] resultG = new Vector3[6] { A, B, C, o, p, q };
         int[] resultT = new int[12] { 0 + 6 * i, 3 + 6 * i, 5 + 6 * i, 3 + 6 * i, 1 + 6 * i, 4 + 6 * i, 5 + 6 * i, 4 + 6 * i, 2 + 6 * i, 3 + 6 * i, 4 + 6 * i, 5 + 6 * i };
 
@@ -131,8 +131,8 @@ public class Octahedron : MonoBehaviour
 
         octahedron = Octa(octahedron);
         octahedron = Octa(octahedron);
+        octahedron = Octa(octahedron);
         
-
 
 
 
