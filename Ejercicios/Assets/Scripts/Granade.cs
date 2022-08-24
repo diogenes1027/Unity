@@ -40,7 +40,7 @@ public class Granade : MonoBehaviour
         }
 
         Destroy(gameObject);
-        Destroy(GameObject.Find("BigExplosionEffect(Clone)"), 3f);
+        Destroy(GameObject.Find("BigExplosion(Clone)"), 2f);
        
     }
 }
