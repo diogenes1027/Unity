@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Bounce.unity
+- path: Assets/Scenes/SoundExercise.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
