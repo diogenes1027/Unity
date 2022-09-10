@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SoundHomework.unity
+- path: Assets/Scenes/Boxing.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

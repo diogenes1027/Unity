@@ -17,14 +17,28 @@ public class Ship : MonoBehaviour
     {
         Vector3 Vec = transform.localPosition;
 
+        
+
+       
+
         if (Input.GetAxis("Horizontal") > 0)
         {
             Vec.x += Input.GetAxis("Horizontal") * Time.deltaTime * 20;
+
+            float y = Input.GetAxis("Horizontal") * Time.deltaTime * 20;
+
+            gameObject.transform.localRotation = Quaternion.Euler(0, -2, 0);
+
             _animator.SetBool("Right", true);
         }
         else if (Input.GetAxis("Horizontal") < 0)
         {
             Vec.x += Input.GetAxis("Horizontal") * Time.deltaTime * 20;
+
+            float y = Input.GetAxis("Horizontal") * Time.deltaTime * 20;
+
+            gameObject.transform.localRotation = Quaternion.Euler(0, -4, 0);
+
             _animator.SetBool("Left", true);
         }
         else {
@@ -47,6 +61,8 @@ public class Ship : MonoBehaviour
             _animator.SetBool("Front", false);
             _animator.SetBool("Back", false);
         }
+
+        
         transform.localPosition = Vec;
     }
 }
