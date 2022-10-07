@@ -39,7 +39,7 @@ public class Walker : MonoBehaviour
     {
 
         //RP_HEAP, LTHIGH, RTHIGH, LLEG, RLEG, LFOOT, RFOOT, RP_TORSO, RP_CHEST, RP_NECK, RP_HEAD
-        RP_HEAP, LTHIGH, LLEG, LFOOT, RTHIGH, RLEG, RFOOT, RP_TORSO, RP_CHEST, RP_NECK, RP_HEAD, LSHOULDER, LARM, LFOREARM,LHAND, RSHOULDER, RARM, RFOREARM, RHAND
+        RP_HEAP, LTHIGH, LLEG, LFOOT, RTHIGH, RLEG, RFOOT, RP_TORSO, RP_CHEST, RP_NECK, RP_HEAD, LSHOULDER, LARM, LFOREARM, LHAND, RSHOULDER, RARM, RFOREARM, RHAND
     };
 
     // Start is called before the first frame update
@@ -161,9 +161,9 @@ public class Walker : MonoBehaviour
         //RIGHT THIGH
         rightLeg.Add(GameObject.CreatePrimitive(PrimitiveType.Cube));
 
-        rightLeg[(int)PARTS.RTHIGH- (int)PARTS.LFOOT].GetComponent<MeshRenderer>().material.SetColor("_Color", Color.white);
-        rightLeg[(int)PARTS.RTHIGH- (int)PARTS.LFOOT].name = "RTHIGH";
-        rightLeg[(int)PARTS.RTHIGH- (int)PARTS.LFOOT].GetComponent<BoxCollider>().enabled = false;
+        rightLeg[(int)PARTS.RTHIGH - (int)PARTS.LFOOT].GetComponent<MeshRenderer>().material.SetColor("_Color", Color.white);
+        rightLeg[(int)PARTS.RTHIGH - (int)PARTS.LFOOT].name = "RTHIGH";
+        rightLeg[(int)PARTS.RTHIGH - (int)PARTS.LFOOT].GetComponent<BoxCollider>().enabled = false;
 
         rl_scales.Add(Transformations.Scale(0.4f, 0.6f, 0.4f));
         rl_locations.Add(Transformations.Translate(0f, -0.478f, -0.32f));
@@ -358,7 +358,7 @@ public class Walker : MonoBehaviour
         ra_scales.Add(Transformations.Scale(0.3f, 0.3f, 0.3f));
         ra_locations.Add(Transformations.Translate(0f, 0f, -0.509f));
         ra_rotations.Add(Transformations.RotateY(0f));
-      
+
     }
 
     // Update is called once per frame
@@ -410,16 +410,17 @@ public class Walker : MonoBehaviour
         }
 
 
-        
-        for (int j = 0; j < head.Count; j++){
-            
+
+        for (int j = 0; j < head.Count; j++)
+        {
+
             Matrix4x4 mh = accumTh * h_locations[j] * h_rotations[j] * h_scales[j];
 
             accumTh *= h_locations[j] * h_rotations[j];
-            
+
 
             head[j].GetComponent<MeshFilter>().mesh.vertices = Transformations.Transform(mh, v3_originals);
-            
+
         }
 
         for (int i = 0; i < leftArm.Count; i++)
@@ -429,12 +430,12 @@ public class Walker : MonoBehaviour
             Matrix4x4 mla = accumTla * la_locations[i] * la_rotations[i] * la_scales[i];
             Matrix4x4 mra = accumTra * ra_locations[i] * ra_rotations[i] * ra_scales[i];
 
-            
+
             accumTla *= la_locations[i] * la_rotations[i];
             accumTra *= ra_locations[i] * ra_rotations[i];
 
-            
-         
+
+
             /*
             if (i == 4)
             {
