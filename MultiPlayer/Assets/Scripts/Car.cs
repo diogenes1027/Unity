@@ -24,6 +24,9 @@ public class Car : MonoBehaviour
 
     AudioSource audio;
 
+    AudioListener audioListener;
+    AudioReverbFilter reverbFilter;
+    AudioLowPassFilter audioLowPassFilter;
     PhotonView view;
 
 
@@ -33,13 +36,23 @@ public class Car : MonoBehaviour
         audio = GetComponent<AudioSource>();
         view = GetComponent<PhotonView>();
 
+        audioListener = camera.GetComponent<AudioListener>();
+        reverbFilter = camera.GetComponent<AudioReverbFilter>();
+        audioLowPassFilter = camera.GetComponent<AudioLowPassFilter>();
         if (view.IsMine)
         {
-
+            audioListener.enabled = true;
+            reverbFilter.enabled = true;
+            audioLowPassFilter.enabled = true;
+            audio.enabled = true;
             camera.enabled = true;
         }
         else {
             camera.enabled = false;
+            audioListener.enabled = false;
+            reverbFilter.enabled = false;
+            audioLowPassFilter.enabled = false;
+            audio.enabled = true;
         }
 
     }
@@ -53,6 +66,7 @@ public class Car : MonoBehaviour
         if (view.IsMine) {
             currentacceleration = acceleration * Input.GetAxis("Vertical");
 
+            
 
             if (Input.GetKey(KeyCode.Space))
             {
@@ -87,7 +101,7 @@ public class Car : MonoBehaviour
 
             if (Input.GetKey(KeyCode.X)) gameObject.transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0);
 
-            if (Input.GetKey(KeyCode.C)) audio.PlayOneShot(honk, 0.5f);
+            if (Input.GetKey(KeyCode.C)) audio.PlayOneShot(honk, 0.2f);
         }
     }
         
