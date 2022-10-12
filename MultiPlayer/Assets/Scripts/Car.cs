@@ -13,7 +13,7 @@ public class Car : MonoBehaviour
     [SerializeField] AudioClip honk;
 
     public float acceleration = 500f;
-    public float breakingforce = 300f;
+    public float breakingforce = 700f;
     float turn = 15f;
 
     float currentacceleration = 0f;
@@ -68,7 +68,7 @@ public class Car : MonoBehaviour
 
             
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0))
             {
                 currentbreakingforce = breakingforce;
                 _animator.SetBool("ON", true);
@@ -99,9 +99,9 @@ public class Car : MonoBehaviour
 
 
 
-            if (Input.GetKey(KeyCode.X)) gameObject.transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0);
+            if (Input.GetKey(KeyCode.X) || Input.GetKey(KeyCode.JoystickButton2)) gameObject.transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0);
 
-            if (Input.GetKey(KeyCode.C)) audio.PlayOneShot(honk, 0.2f);
+            if (Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.JoystickButton1)) audio.PlayOneShot(honk, 0.2f);
         }
     }
         
