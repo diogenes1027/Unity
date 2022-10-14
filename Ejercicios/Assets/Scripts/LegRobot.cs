@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static RobotBody;
+using static Walker;
+
+//Diógenes Grajales Corona A01653251
 
 public class LegRobot : MonoBehaviour
 {
