@@ -61,7 +61,7 @@ public class LegRobot : MonoBehaviour
                     accumT = heapMatrix;
                     Matrix4x4 t1 = Transformations.Translate(0f, -0.175f, 0.32f);
                     Matrix4x4 t2 = Transformations.Translate(0f, -0.4f, 0.0f);
-                    Matrix4x4 r = Transformations.RotateZ(rX.val * 3f);
+                    Matrix4x4 r = Transformations.RotateZ(-rX.val * 4f);
                     m = accumT * t1 * r * t2 * m_scales[i];
                     accumT *= t1 * r * t2;
 
@@ -70,8 +70,12 @@ public class LegRobot : MonoBehaviour
                 {
                     Matrix4x4 t1 = Transformations.Translate(0f, -0.4f, 0f);
                     Matrix4x4 t2 = Transformations.Translate(0f, -0.5f, 0f);
-                    movementLegL = Mathf.Max(rX.val * 3.5f, 0);
-                    Matrix4x4 r = Transformations.RotateZ(movementLegL);
+                    Matrix4x4 r = new Matrix4x4();
+                    if (rX.dir > 0)
+                    {
+                        r = Transformations.RotateZ(rk.val * 5f);
+                    }
+                    else r = Transformations.RotateZ(0);
                     m = accumT * t1 * r * t2 * m_scales[i];
                     accumT *= t1 * r * t2;
                 }
@@ -90,7 +94,6 @@ public class LegRobot : MonoBehaviour
         }
         else if (side == "RIGHT")
         {
-            float currR = 0;
             for (int i = (int)PARTS.RTHIGH; i <= (int)PARTS.RFOOT; i++)
             {
                 
@@ -100,10 +103,7 @@ public class LegRobot : MonoBehaviour
                     accumT = heapMatrix;
                     Matrix4x4 t1 = Transformations.Translate(0f, -0.175f, -0.32f);
                     Matrix4x4 t2 = Transformations.Translate(0f, -0.4f, 0.0f);
-                    //Matrix4x4 r = Transformations.RotateZ(-rX.val * 3f);
-                    currR = rX.val;
-                    movementLegL = Mathf.Min(-rX.val * 5f, 20);
-                    Matrix4x4 r = Transformations.RotateZ(-rX.val * 5f);
+                    Matrix4x4 r = Transformations.RotateZ(rX.val * 4f);
                     m = accumT * t1 * r * t2 * m_scales[i];
                     accumT *= t1 * r * t2;
 
@@ -112,16 +112,13 @@ public class LegRobot : MonoBehaviour
                 {
                     Matrix4x4 t1 = Transformations.Translate(0f, -0.4f, 0f);
                     Matrix4x4 t2 = Transformations.Translate(0f, -0.5f, 0f);
-                    movementLegR = Mathf.Min(-rk.val * 5f,0);
                     Matrix4x4 r = new Matrix4x4();
-                    if (rX.dir > 0) {
-                        if(0 <= currR) r = Transformations.RotateZ(-movementLegR);
-                        else r = Transformations.RotateZ(movementLegR);
+                    if (rX.dir < 0) {
+                        r = Transformations.RotateZ(-rk.val * 5f);
                     } 
                     else r = Transformations.RotateZ(0);
                     
-                    
-                    //r = Transformations.RotateZ(-rk.val*5f);
+                   
                     m = accumT * t1 * r * t2 * m_scales[i];
                     accumT *= t1 * r * t2;
                 }

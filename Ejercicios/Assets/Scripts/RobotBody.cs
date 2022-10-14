@@ -77,8 +77,8 @@ public class RobotBody : MonoBehaviour
         leftLeg = gameObject.AddComponent<LegRobot>();
         rightLeg = gameObject.AddComponent<LegRobot>();
 
-        rY = new BACK_FORTH(0.075f, 1f, 0f, -9f, 9f);
-        rk = new BACK_FORTH(0.0325f, 1f, 0f, -9f, 9f);
+        rY = new BACK_FORTH(0.5f, 1f, 0f, -9f, 9f);
+        rk = new BACK_FORTH(0.5f, -1f, 9f, -9f, 9f);
         jump = new BACK_FORTH(0.0005f, 1f, 0f, -0.05f, 0.05f);
         rX = new BACK_FORTH(0.05f, 1f, 0f, 0f, 8f);
 
