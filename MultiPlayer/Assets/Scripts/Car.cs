@@ -95,7 +95,7 @@ public class Car : MonoBehaviour
             }
 
 
-            fr.motorTorque = currentacceleration * 100f;
+            fr.motorTorque = currentacceleration;
             fl.motorTorque = currentacceleration;
             bl.motorTorque = currentacceleration;
             bl.motorTorque = currentacceleration;

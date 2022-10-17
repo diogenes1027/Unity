@@ -347,6 +347,7 @@
 "Assets/Scenes/Multiplayer/SpawnPlayers.cs"
 "Assets/Scripts/Car.cs"
 "Assets/Scripts/Collectable.cs"
+"Assets/Scripts/StartGame.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
