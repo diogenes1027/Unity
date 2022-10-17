@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Photon.Pun;
+using Photon.Pun.UtilityScripts;
 
 public class Car : MonoBehaviour
 {
@@ -21,6 +23,7 @@ public class Car : MonoBehaviour
     float currentturn = 0f;
 
     public Camera camera;
+    public Text name;
 
     AudioSource audio;
 
@@ -33,14 +36,22 @@ public class Car : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.tag = "Player";
         audio = GetComponent<AudioSource>();
         view = GetComponent<PhotonView>();
+        //view.Owner.NickName = "Car 1";
+
+        name.text = view.Owner.NickName;
+
+        //Debug.Log();
+
 
         audioListener = camera.GetComponent<AudioListener>();
         reverbFilter = camera.GetComponent<AudioReverbFilter>();
         audioLowPassFilter = camera.GetComponent<AudioLowPassFilter>();
         if (view.IsMine)
         {
+            name.enabled = true;
             audioListener.enabled = true;
             reverbFilter.enabled = true;
             audioLowPassFilter.enabled = true;
@@ -48,6 +59,7 @@ public class Car : MonoBehaviour
             camera.enabled = true;
         }
         else {
+            name.enabled = false;
             camera.enabled = false;
             audioListener.enabled = false;
             reverbFilter.enabled = false;
@@ -64,9 +76,11 @@ public class Car : MonoBehaviour
 
         
         if (view.IsMine) {
+
+            //Debug.Log(view.Owner.NickName);
+        
             currentacceleration = acceleration * Input.GetAxis("Vertical");
 
-            
 
             if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0))
             {
@@ -104,5 +118,14 @@ public class Car : MonoBehaviour
             if (Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.JoystickButton1)) audio.PlayOneShot(honk, 0.2f);
         }
     }
-        
+    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals("Collectable"))
+        {
+            view.Owner.AddScore(1);
+        }
+    }
+
 }
